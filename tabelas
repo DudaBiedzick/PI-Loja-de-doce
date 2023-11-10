@@ -1,0 +1,23 @@
+create database lojaDocePI;
+use lojaDocePI;
+
+create table Funcionario (
+   id int auto_increment primary key,
+   nome varchar (250) not null,
+   email varchar (250) not null,
+   endereco varchar (250) not null,
+   salario varchar (250) not null;
+);
+
+create table Cliente (
+id int auto_increment primary key,
+nomeCliente varchar (250) not null,
+telefone varchar (11) not null;
+);
+
+create table PedidoeProduto (
+id int,
+nomePedidoeProduto varchar (250) not null,
+tamanho varchar (250) not null,
+preco double;
+);
